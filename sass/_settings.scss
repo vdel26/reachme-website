@@ -1,3 +1,26 @@
+// SOCIAL ICON FONTS
+// social font icons
+@font-face {
+    font-family: 'icomoon';
+    src:url('/fonts/icomoon.eot');
+    src:url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.woff') format('woff'),
+        url('/fonts/icomoon.ttf') format('truetype'),
+        url('/fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
 //
 // Foundation Variables
 //
@@ -23,7 +46,7 @@ $em-base: 16px !default;
 
 //// Various global styles
 
-$body-bg: rgb(236,236,236);
+$body-bg: rgb(220,227,237);
 $body-font-color: #6a7181;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -111,20 +134,12 @@ $total-columns: 12;
 //
 // Typography Variables
 //
-
-@font-face {
-    font-family: 'Cassannet';
-    src: url('../images/Cassannet.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Cassannet Bold';
-    src: url('../images/CassannetBold.otf') format('opentype');
-}
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700");
 
 //// Heading font styles
 
-$header-font-family: "Cassannet", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+$header-font-family: "Open Sans", sans-serif;
+$header-font-weight: 700;
 // $header-font-style: normal;
 $header-font-color: #141823;
 // $header-line-height: 1.4;
@@ -156,8 +171,8 @@ $header-font-color: #141823;
 
 //// Paragraphs
 
-$paragraph-font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$paragraph-font-weight: normal;
+$paragraph-font-family: "Open Sans", sans-serif;
+$paragraph-font-weight: 400;
 $paragraph-font-size: 1em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20px);
@@ -813,8 +828,10 @@ $button-border-style: solid;
 //// Background and border styles
 
 // $panel-bg: darken(#fff, 5%);
-// $panel-border-style: solid;
-// $panel-border-size: 1px;
+//$panel-bg: rgba(41,54,86,0.8);
+$panel-border-style: solid;
+$panel-border-size: 1px;
+$panel-border-color: #8D8D8D;
 
 //// Control how much we darken things on hover
 

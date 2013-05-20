@@ -1,4 +1,4 @@
-var Wolf = (function ($, win, doc, undefined) {
+var ReachMe = (function ($, win, doc, undefined) {
     var root = {},
         d = $(doc),
         w = $(win),
@@ -7,7 +7,7 @@ var Wolf = (function ($, win, doc, undefined) {
 
     root.init = function () {
         d.foundation();
-        root.stickyNav();
+        //root.stickyNav();
     };
 
     root.stickyNav = function () {
@@ -35,5 +35,5 @@ var Wolf = (function ($, win, doc, undefined) {
 }($, window, document));
 
 $(document).ready(function (){
-    Wolf.init();
+    ReachMe.init();
 });

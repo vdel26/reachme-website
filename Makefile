@@ -1,6 +1,6 @@
 all:
 
-server:
+server: build
 	python -m SimpleHTTPServer 8080
 
 build:

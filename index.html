@@ -4,57 +4,84 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Wolfpack Project 2013</title>
+    <title>ReachMe app</title>
     <link href="stylesheets/normalize.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
 <body>
     <header class="row full">
+        <!--
         <video class="header-video" autoplay loop>
             <source src="https://fbcdn-dragon-a.akamaihd.net/cfs-ak-ash3/676434/970/135351913305575_544816858.mp4">
-            <img src="http://fbcdn-dragon-a.akamaihd.net/cfs-ak-ash3/676513/617/135351913305575_1421925707.jpg" alt="">
         </video>
-        <div class="wolfpack-container">
-            <h1><span class="strong">Wolfpack</span> Project</h1>
-            <button class="redbutton hide-for-small">STAY TUNED</button>
+        -->
+        <img class="header-video" src="images/header-img.jpg" alt="">
+        <div class="reachme-container">
+            <h1>Reach talent</h1>
+            <h2>around you</h2>
+            <img class="header-bar" src="images/header-bar.png">
         </div>
     </header>
     <nav class="top-bar">
-        <div class="email-form">
-            <div id="input" class="large-6 columns email-box">
-                <input type="text" placeholder="example@wolfpackproject.com">
-            </div>
-            <div class="large-2 columns email-submit">
-                <button href="#" class="redbutton">STAY TUNED</a>
-            </div>
+        <div class="row-list">
+            <ul class="inline-list column-list">
+                <li class="nav-item"><a href="#section1">ReachMe</a></li>
+                <li class="nav-item"><a href="#section2">How it works</a></li>
+                <li class="nav-item"><a href="#contact">Follow us</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="row">
+    <div class="row" id="section1">
         <div class="large-12 columns">
-            <div class="panel section1-panel">
+            <div class="panel section1-panel" style="padding-bottom:0;">
                 <div class="large-6 columns">
-                    <h1>Introducing<br><span class="strong">Wolfpack</span> Sköll</h1>
+                    <img src="images/section1-img.jpg" width="350" style="margin-top:-40px;">
+                </div>
+                <div class="large-6 columns">
+                    <h3 style="margin-top: 120px;">They are close. At any time. Just anywhere.</h3>
+                    <ul>
+                        <li>Post anything: Share photos, videos, links and text.</li>
+                        <li>Multiple blogs: seamlessly manage all of your blogs.</li>
+                        <li>Messages: view and reply to messages.</li>
+                        <li>Advanced controls: Save drafts, queue posts, and more!</li>
+                        <li>Easy camera access: Swipe the compose button up!</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="section2">
+        <div class="large-12 columns">
+            <div class="panel section2-panel">
+                <div class="large-6 columns">
                     <h3>The first helmet that integrates your smartphone</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
                 <div class="large-6 columns">
-                    <img src="images/helmet.png">
-                    <h3>Pre-orders starting in August 2013</h3>
+                    <img src="images/section2-img.png" style="width: 700px; margin-left: -100px; max-width: none;">
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="large-12 columns">
-            <div class="panel radius">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+    <div class="row full" id="section3">
+    </div>
+    <footer id="contact">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="large-6 columns">
+                    <p>Site | About us | Contact<br>
+                    ©2013 ReachMe. All rights reserved.</p>
+                </div>
+                <div class="large-6 columns">
+                    <div class="well" data-icon="&#xe000;" aria-hidden="true" style="float:left; margin-right: 8px;"></div>
+                    <div class="well" data-icon="&#xe001;" aria-hidden="true" style="float:left; margin-right: 8px;"></div>
+                    <div class="well" data-icon="&#xe002;" aria-hidden="true" style="float:left; margin-right: 8px;"></div>
+                </div>
             </div>
         </div>
-    </div>
-
+    </footer>
 <script>
 document.write('<script src=' +
 ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
