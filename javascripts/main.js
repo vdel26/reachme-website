@@ -7,7 +7,13 @@ var ReachMe = (function ($, win, doc, undefined) {
 
     root.init = function () {
         d.foundation();
-        //root.stickyNav();
+        this.stickyNav();
+
+        // attach event listeners for navbar
+        $('.top-bar a').click(function (evt) {
+            evt.preventDefault();
+            root.smoothScroll($(evt.target.hash), 400);
+        });
     };
 
     root.stickyNav = function () {
@@ -18,6 +24,7 @@ var ReachMe = (function ($, win, doc, undefined) {
         });
 
         w.scroll(function () {
+          console.log(stickyHeight);
             if ($('html').hasClass('no-touch')) {
                 if (w.scrollTop() > stickyHeight) {
                     nav.addClass('stickybar');
@@ -29,6 +36,10 @@ var ReachMe = (function ($, win, doc, undefined) {
                 }
             }
         });
+    };
+
+    root.smoothScroll = function (elem, duration) {
+        Foundation.lib_methods.scrollTo(w, elem.offset().top - nav.height(), duration);
     };
 
     return root;

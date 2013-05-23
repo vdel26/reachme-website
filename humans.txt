@@ -1,9 +1,11 @@
-/* WOLFPACK PROJECT*/
-Coming soon, fall 2013
+/* REACHME APP*/
+Coming soon.
 
-/* Site design */
+/* Team */
+    Rodrigo Huerta -- @rodrihuertter
+    Ferran Caceres -- @ferrancaceres
+    Joaquim Moreno -- @jmprusi
     Victor Delgado -- @lechienvic
-    Ernest Romero -- @romerocliment
 
 /* Technology */
 HTML5, CSS3, Foundation, Compass
