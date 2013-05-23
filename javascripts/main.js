@@ -24,7 +24,6 @@ var ReachMe = (function ($, win, doc, undefined) {
         });
 
         w.scroll(function () {
-          console.log(stickyHeight);
             if ($('html').hasClass('no-touch')) {
                 if (w.scrollTop() > stickyHeight) {
                     nav.addClass('stickybar');
