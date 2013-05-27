@@ -93,7 +93,7 @@ body {
     z-index: 0;
 }
 header.stickybar {
-    margin-bottom: 52px;
+    margin-bottom: $topbar-height;
 }
 // nav bar styles
 .top-bar {
@@ -101,7 +101,7 @@ header.stickybar {
     // no sticky styles
     
     @media #{$small} {
-        top: -52px;
+        top: -$topbar-height;
         margin-bottom: 0;
     }
 
@@ -130,7 +130,7 @@ header.stickybar {
     .nav-item a{
         color: #FFF;
         font-size: 1.1em;
-        line-height: 52px;
+        line-height: $topbar-height;
         text-align: center;
         letter-spacing: 1px;
 
@@ -162,9 +162,10 @@ header.stickybar {
     overflow: hidden;
     background-color: #FFF;
     border-radius: 0;
+    margin-bottom: 0;
 }
 #section1, #section2 {
-    margin-bottom: 1em;
+    margin-bottom: $topbar-height;
 }
 #section1 {
     h3 {
@@ -202,14 +203,12 @@ footer {
     p {
         font-weight: 300;
     }
-
     .row > div {
         margin-top: 1.5em;
     }
     .well {            
         margin-bottom: 1em;
     }
-
     @media #{$small} {
         .well {            
             margin-bottom: 0;
