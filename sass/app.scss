@@ -98,12 +98,8 @@ header.stickybar {
 // nav bar styles
 .top-bar {
     background-color: rgba(41,54,86,0.75);
-    // no sticky styles
-    
-    @media #{$small} {
-        top: -$topbar-height;
-        margin-bottom: 0;
-    }
+    margin-bottom: 0;
+    top: -$topbar-height;
 
     &.stickybar {
         position: fixed;
@@ -175,10 +171,12 @@ header.stickybar {
         width: 350px;
         margin-top:-40px;
     }
+    @media #{$small} {
+    }
 }
 #section2 {
     h3 {
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .text-column {
         z-index: 1;
@@ -188,6 +186,8 @@ header.stickybar {
         margin-left: -100px;
         max-width: none;
         z-index: -1;
+    }
+    @media #{$small} {
     }
 }
 #section3 {
