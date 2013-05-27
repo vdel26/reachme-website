@@ -161,6 +161,29 @@ header.stickybar {
 #section1, #section2 {
     margin-bottom: 1em;
 }
+#section1 {
+    h3 {
+        margin-top: 100px;
+    }
+    img {
+        width: 350px;
+        margin-top:-40px;
+    }
+}
+#section2 {
+    h3 {
+        margin-top: 80px;
+    }
+    .text-column {
+        z-index: 1;
+    }
+    img {
+        width: 700px;
+        margin-left: -100px;
+        max-width: none;
+        z-index: -1;
+    }
+}
 #section3 {
     background: url("/images/prefooter-bg.jpg");
     height: 450px;
