@@ -4421,7 +4421,7 @@ header.stickybar {
 /* line 126, ../sass/app.scss */
 .top-bar .nav-item a {
   color: #FFF;
-  font-size: 1.1em;
+  font-size: 0.8em;
   line-height: 52px;
   text-align: center;
   letter-spacing: 1px;
@@ -4430,31 +4430,37 @@ header.stickybar {
 .top-bar .nav-item a:hover {
   color: #40AEBB;
 }
+@media only screen and (min-width: 48em) {
+  /* line 138, ../sass/app.scss */
+  .top-bar .nav-item a {
+    font-size: 1.1em;
+  }
+}
 
-/* line 139, ../sass/app.scss */
+/* line 144, ../sass/app.scss */
 .panel {
   border: 1px solid #8d8d8d;
   box-shadow: 2px 2px 4px 0 #8d8d8d;
 }
-/* line 143, ../sass/app.scss */
+/* line 148, ../sass/app.scss */
 .panel h1 {
   color: #141823;
 }
-/* line 146, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 .panel h2, .panel h3 {
   color: #6a7181;
   font-weight: 400;
 }
-/* line 150, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 .panel p {
   color: #6a7181;
 }
-/* line 153, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 .panel ul > li {
   line-height: 2em;
 }
 
-/* line 157, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
 .section1-panel, .section2-panel {
   overflow: hidden;
   background-color: #FFF;
@@ -4462,64 +4468,89 @@ header.stickybar {
   margin-bottom: 0;
 }
 
-/* line 163, ../sass/app.scss */
-#section1, #section2 {
+/* line 168, ../sass/app.scss */
+#section1 {
   margin-bottom: 52px;
 }
-
-/* line 167, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 #section1 h3 {
-  margin-top: 100px;
+  margin-top: 30px;
 }
-/* line 170, ../sass/app.scss */
+/* line 174, ../sass/app.scss */
 #section1 img {
   width: 350px;
   margin-top: -40px;
 }
-
-/* line 178, ../sass/app.scss */
-#section2 h3 {
-  margin-top: 40px;
+@media only screen and (min-width: 48em) {
+  /* line 179, ../sass/app.scss */
+  #section1 h3 {
+    margin-top: 100px;
+  }
 }
-/* line 181, ../sass/app.scss */
+
+/* line 184, ../sass/app.scss */
+#section2 {
+  margin-bottom: 52px;
+}
+/* line 187, ../sass/app.scss */
+#section2 h3 {
+  margin-top: 20px;
+}
+/* line 190, ../sass/app.scss */
 #section2 .text-column {
   z-index: 1;
 }
-/* line 184, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 #section2 img {
-  width: 700px;
+  width: 400px;
   margin-left: -100px;
   max-width: none;
   z-index: -1;
 }
-
-/* line 193, ../sass/app.scss */
-#section3 {
-  background: url("/images/prefooter-bg.jpg");
-  height: 450px;
+@media only screen and (min-width: 48em) {
+  /* line 200, ../sass/app.scss */
+  #section2 h3 {
+    margin-top: 40px;
+  }
+  /* line 203, ../sass/app.scss */
+  #section2 img {
+    width: 700px;
+  }
 }
 
-/* line 197, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
+#section3 {
+  background: url("/images/prefooter-bg.jpg");
+  height: 300px;
+}
+@media only screen and (min-width: 48em) {
+  /* line 208, ../sass/app.scss */
+  #section3 {
+    height: 450px;
+  }
+}
+
+/* line 216, ../sass/app.scss */
 footer {
   max-width: 100%;
   background-color: #96A3CD;
   color: #FFF;
   font-weight: 300;
 }
-/* line 203, ../sass/app.scss */
+/* line 222, ../sass/app.scss */
 footer p {
   font-weight: 300;
 }
-/* line 206, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
 footer .row > div {
   margin-top: 1.5em;
 }
-/* line 209, ../sass/app.scss */
+/* line 228, ../sass/app.scss */
 footer .well {
   margin-bottom: 1em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 213, ../sass/app.scss */
+  /* line 232, ../sass/app.scss */
   footer .well {
     margin-bottom: 0;
   }

@@ -125,13 +125,18 @@ header.stickybar {
     }
     .nav-item a{
         color: #FFF;
-        font-size: 1.1em;
+        font-size: 0.8em;
         line-height: $topbar-height;
         text-align: center;
         letter-spacing: 1px;
 
         &:hover {
             color: #40AEBB;
+        }
+    }
+    @media #{$small} {
+        .nav-item a {
+            font-size: 1.1em;
         }
     }
 }
@@ -160,39 +165,53 @@ header.stickybar {
     border-radius: 0;
     margin-bottom: 0;
 }
-#section1, #section2 {
-    margin-bottom: $topbar-height;
-}
 #section1 {
+    margin-bottom: $topbar-height;
+
     h3 {
-        margin-top: 100px;
+        margin-top: 30px;
     }
     img {
         width: 350px;
         margin-top:-40px;
     }
     @media #{$small} {
+        h3 {
+           margin-top: 100px; 
+        }
     }
 }
 #section2 {
+    margin-bottom: $topbar-height;
+
     h3 {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .text-column {
         z-index: 1;
     }
     img {
-        width: 700px;
+        width: 400px;
         margin-left: -100px;
         max-width: none;
         z-index: -1;
     }
     @media #{$small} {
+        h3 {
+           margin-top: 40px; 
+        }
+        img {
+            width: 700px;
+        }
     }
 }
 #section3 {
     background: url("/images/prefooter-bg.jpg");
-    height: 450px;
+    height: 300px;
+
+    @media #{$small} {
+        height: 450px;
+    }
 }
 footer {
     max-width: 100%;
