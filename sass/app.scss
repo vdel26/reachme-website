@@ -96,7 +96,7 @@ header.stickybar {
     // no sticky styles
     
     @media #{$small} {
-        top: -60px;
+        top: -52px;
         margin-bottom: 0;
     }
 
@@ -125,7 +125,7 @@ header.stickybar {
     .nav-item a{
         color: #FFF;
         font-size: 1.1em;
-        line-height: 60px;
+        line-height: 52px;
         text-align: center;
         letter-spacing: 1px;
 
